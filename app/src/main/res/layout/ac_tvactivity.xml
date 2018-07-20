@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <me.dkzwm.widget.srl.SmoothRefreshLayout
+        android:id="@+id/srl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2.5dp"
+        android:orientation="vertical"
+        app:sr_empty_layout="@layout/layout_empty_list"
+        app:sr_enable_over_scroll="false"
+        app:sr_error_layout="@layout/layout_error_list"
+        app:sr_header_background_color="@color/transparent"
+        app:sr_state="content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingTop="10dp"/>
+    </me.dkzwm.widget.srl.SmoothRefreshLayout>
+</LinearLayout>

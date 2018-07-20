@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="@string/current_entrustment"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="59dp"
+        android:drawablePadding="10.5dp"
+        android:drawableTop="@drawable/jys_wjl_xhdpi"
+        android:gravity="center_horizontal"
+        android:text="@string/no_entrustment"
+        android:textColor="@color/CCCCCC"
+        android:textSize="12dp" />
+
+</LinearLayout>

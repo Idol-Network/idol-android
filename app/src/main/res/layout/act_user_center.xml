@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_cover"
+    android:layoutAnimation="@anim/anim_usercenter_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="47dp"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="25dp"
+            fresco:actualImageScaleType="fitXY"
+            fresco:failureImage="@drawable/base_head"
+            fresco:failureImageScaleType="fitXY"
+            fresco:placeholderImage="@drawable/base_head"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:roundAsCircle="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NickName"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="000000"
+                android:textColor="@color/white"
+                android:textSize="11dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_message"
+        style="@style/User_Center_Menu"
+        android:layout_marginTop="29dp"
+        android:drawableLeft="@drawable/gr_xiaoxixhdpi"
+        android:text="@string/my_message" />
+
+    <TextView
+        android:id="@+id/tv_followed"
+        style="@style/User_Center_Menu"
+        android:layout_marginTop="21.5dp"
+        android:drawableLeft="@drawable/wd_guanzhu_xhdpi"
+        android:text="@string/my_followed" />
+
+    <TextView
+        android:id="@+id/tv_orders"
+        style="@style/User_Center_Menu"
+        android:layout_marginTop="21.5dp"
+        android:drawableLeft="@drawable/gs_diangdan_xhdpi"
+        android:text="@string/my_order" />
+
+    <TextView
+        android:id="@+id/tv_wallet"
+        style="@style/User_Center_Menu"
+        android:layout_marginTop="21.5dp"
+        android:drawableLeft="@drawable/gs_qianbaoxhdpi"
+        android:text="@string/my_wallet" />
+
+    <TextView
+        android:id="@+id/tv_settings"
+        style="@style/User_Center_Menu"
+        android:layout_marginTop="21.5dp"
+        android:drawableLeft="@drawable/gr_shezhi_xhdpi"
+        android:text="@string/settings" />
+
+</LinearLayout>

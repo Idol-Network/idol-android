@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phone_register_shape">
+
+    <FrameLayout
+        android:id="@+id/fl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/fetter"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/titleTextSize" />
+    </FrameLayout>
+
+    <me.dkzwm.widget.srl.SmoothRefreshLayout
+        android:id="@+id/srl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_input"
+        android:layout_below="@id/fl_title"
+        android:orientation="vertical"
+        app:sr_empty_layout="@layout/layout_empty_list"
+        app:sr_enable_over_scroll="false"
+        app:sr_error_layout="@layout/layout_error_list"
+        app:sr_header_background_color="@color/transparent"
+        app:sr_state="empty">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_fetter_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" />
+
+    </me.dkzwm.widget.srl.SmoothRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#482873"
+        android:orientation="horizontal">
+
+        <com.yiju.idol.ui.view.LimitedEditText
+            android:id="@+id/edt_resp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/say_something"
+            android:maxLines="3"
+            android:minHeight="50dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="13dp"
+            android:paddingTop="15dp"
+            android:textColor="#cccccc"
+            android:textColorHint="#cccccc"
+            android:textSize="14dp"
+            app:limitBytes="200" />
+
+        <Button
+            android:id="@+id/btn_comment"
+            android:layout_width="49dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_btn_comment"
+            android:text="@string/comment"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

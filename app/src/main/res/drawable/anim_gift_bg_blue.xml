@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item
+        android:drawable="@drawable/lanse_03"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/lanse_04"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/lanse_05"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/lanse_06"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/lanse_07"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/lanse_08"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/lanse_09"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/lanse_10"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/lanse_11"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/lanse_00"
+        android:duration="1" />
+
+</animation-list>

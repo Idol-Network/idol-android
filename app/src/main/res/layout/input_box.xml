@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_send"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_gravity="bottom"
+    android:background="@color/white"
+    android:divider="@drawable/vertical_divider"
+    android:dividerPadding="7dp"
+    android:gravity="center_vertical"
+    android:showDividers="middle"
+    android:visibility="invisible">
+
+    <CheckBox
+        android:id="@+id/cb_barrage"
+        android:layout_width="42dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_switch_danmaku"
+        android:button="@null"
+        android:checked="false"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/et_msg"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:hint="@string/hint_say_sth"
+        android:imeOptions="actionSend|flagNoExtractUi"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#cccccc"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btn_send_msg"
+        android:layout_width="65dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:enabled="false"
+        android:text="@string/send_msg"
+        android:textColor="@color/color_btn_send_msg"
+        android:textSize="17dp" />
+</LinearLayout>

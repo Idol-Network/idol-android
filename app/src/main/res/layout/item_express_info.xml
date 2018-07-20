@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view_top_line"
+        android:layout_width="1dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="24.5dp"
+        android:background="#99f0f0f0" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="24.5dp"
+        android:layout_marginTop="35dp"
+        android:background="#99f0f0f0" />
+
+    <ImageView
+        android:id="@+id/iv_dot"
+        android:layout_width="22dp"
+        android:layout_height="20dp"
+        android:scaleType="centerInside"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/wuliudangqianxhdpi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="18dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="17dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:lineSpacingExtra="3dp"
+            android:text="派送中"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="7dp"
+            android:text="2010-01-01 00:00:00"
+            android:textColor="@color/s9"
+            android:textSize="@dimen/text_size_12" />
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="13dp"
+            android:background="#99666666" />
+    </LinearLayout>
+
+</FrameLayout>

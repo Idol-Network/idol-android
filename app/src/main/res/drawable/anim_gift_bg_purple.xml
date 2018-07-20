@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item
+        android:drawable="@drawable/zise_03"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/zise_04"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/zise_05"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/zise_06"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/zise_07"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/zise_08"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/zise_09"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/zise_10"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/zise_11"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/zise_00"
+        android:duration="1" />
+
+</animation-list>

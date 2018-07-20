@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/dim_60"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="80dp">
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/dhk_1_xhdpi"
+            android:lineSpacingExtra="5dp"
+            android:paddingBottom="17dp"
+            android:paddingLeft="19.5dp"
+            android:paddingRight="19.5dp"
+            android:paddingTop="15.5dp"
+            android:textColor="#111010"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_star_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/duihuak_btxhdpi"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+    </FrameLayout>
+
+</FrameLayout>

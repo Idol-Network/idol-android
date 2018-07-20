@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phone_register_shape"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_avatar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18.5dp"
+        android:padding="15dp"
+        android:src="@drawable/fanhui"/>
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_avatar"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:placeholderImage="@drawable/base_head"
+            fresco:placeholderImageScaleType="focusCrop"
+            fresco:roundAsCircle="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35.5dp"
+            android:text="@string/add_profile_picture"
+            android:textColor="@color/EEEEEE"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="34.5dp"
+            android:layout_marginRight="34.5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/add_avatar_t"
+            android:textColor="@color/DDDDDD"
+            android:textSize="16sp"/>
+
+
+        <Button
+            android:id="@+id/bt_avatar_next"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="66.5dp"
+            android:layout_marginRight="66.5dp"
+            android:layout_marginTop="50.5dp"
+            android:background="@drawable/bt_signup_shape"
+            android:text="@string/add_a_photo"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_panel_gift"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/liwubeijing">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_gift_icon"
+            android:layout_width="56.5dp"
+            android:layout_height="65dp"
+            fresco:actualImageScaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tv_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:drawableLeft="@drawable/xingbi1"
+            android:drawablePadding="4.5dp"
+            android:gravity="center_vertical"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_value_added"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="+2经验"
+            android:textColor="@color/s9"
+            android:textSize="@dimen/text_size_11" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_gift_combo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/liansong" />
+
+    <ImageView
+        android:id="@+id/iv_gift_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/liwuxuanzhong"
+        android:visibility="gone" />
+
+</FrameLayout>

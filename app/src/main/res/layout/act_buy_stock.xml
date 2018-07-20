@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phone_register_shape"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/titleTextSize" />
+
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/coin_refresh" />
+    </FrameLayout>
+
+    <!--<me.dkzwm.widget.srl.SmoothRefreshLayout-->
+    <!--android:id="@+id/srl_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--app:sr_empty_layout="@layout/layout_empty_list"-->
+    <!--app:sr_enable_over_scroll="false"-->
+    <!--app:sr_header_background_color="@color/transparent"-->
+    <!--app:sr_state="empty">-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_buy_stock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--</me.dkzwm.widget.srl.SmoothRefreshLayout>-->
+
+</LinearLayout>

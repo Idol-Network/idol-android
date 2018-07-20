@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item
+        android:drawable="@drawable/hongse_03"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/hongse_04"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/hongse_05"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/hongse_06"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/hongse_07"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/hongse_08"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/hongse_09"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/hongse_10"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/hongse_11"
+        android:duration="45" />
+    <item
+        android:drawable="@drawable/hongse_00"
+        android:duration="1" />
+
+</animation-list>

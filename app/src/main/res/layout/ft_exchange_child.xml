@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.dkzwm.widget.srl.SmoothRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/srl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:sr_empty_layout="@layout/layout_empty_optional"
+    app:sr_state="content">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="34dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<Space-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1" />-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/tv_sort_price"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:duplicateParentState="true"-->
+    <!--android:text="最新价"-->
+    <!--android:textColor="@color/color_exchange_sort"-->
+    <!--android:textSize="12dp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="4dp"-->
+    <!--android:duplicateParentState="true"-->
+    <!--android:text="Idol/秒"-->
+    <!--android:textColor="@color/color_exchange_sort"-->
+    <!--android:textSize="9dp" />-->
+
+    <!--<View-->
+    <!--android:layout_width="0.5dp"-->
+    <!--android:layout_height="15dp"-->
+    <!--android:background="#CCCCCC" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="6dp"-->
+    <!--android:src="@drawable/shop_bxhdpi" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_sort_chg"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:drawablePadding="5dp"-->
+    <!--android:drawableRight="@drawable/shop_bxhdpi"-->
+    <!--android:text="涨跌幅"-->
+    <!--android:textColor="@color/color_exchange_sort"-->
+    <!--android:textSize="12dp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:background="@color/s6" />-->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="9dp" />
+
+</me.dkzwm.widget.srl.SmoothRefreshLayout>

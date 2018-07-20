@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="59dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_avatar"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="15dp"
+        app:actualImageScaleType="fitXY"
+        app:failureImage="@drawable/base_head"
+        app:failureImageScaleType="fitXY"
+        app:placeholderImage="@drawable/base_head"
+        app:placeholderImageScaleType="fitXY"
+        app:roundAsCircle="true" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#CCCCCC"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/s9"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/color_currency_down"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_chg"
+        android:layout_width="70dp"
+        android:layout_height="23dp"
+        android:gravity="center"
+        android:layout_marginLeft="53dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_chg_down"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+</LinearLayout>

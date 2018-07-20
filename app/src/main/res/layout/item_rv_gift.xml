@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundproress="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_gravity="bottom"
+        android:background="#edffffff" />
+
+
+    <LinearLayout
+        android:id="@+id/content_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_gift_icon"
+            android:layout_width="65dp"
+            android:layout_height="75dp"
+            roundproress:actualImageScaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tv_star_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:drawableLeft="@drawable/xingbi1"
+            android:drawablePadding="4dp"
+            android:text="0"
+            android:textColor="@color/s3"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content_gift_big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="invisible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:layout_gravity="bottom"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_gift_icon_big"
+                android:layout_width="wrap_content"
+                android:layout_height="98dp"
+                roundproress:viewAspectRatio="1.15"
+                roundproress:actualImageScaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="鼓掌"
+                android:textColor="#999999"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:drawableLeft="@drawable/xingbi1"
+                android:drawablePadding="4dp"
+                android:text="2"
+                android:textColor="@color/s3"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:background="@color/color_msg_red"
+                android:text="赠送"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/content_combo"
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/lianjibeijing"
+        android:visibility="invisible">
+
+        <com.yiju.idol.ui.view.RoundProgressBar
+            android:id="@+id/rpb_count_down"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            roundproress:backColor="@color/color_msg_red"
+            roundproress:max="30"
+            roundproress:roundColor="@color/white"
+            roundproress:roundProgressColor="#FFB1AF"
+            roundproress:roundTextSize="23dp"
+            roundproress:roundWidth="3dp"
+            roundproress:style="FILL"
+            roundproress:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_combo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/lianji" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--透明色-->
+    <color name="transport">#00000000</color>
+    <color name="dim_60">#99000000</color>
+
+    <!--红色-->
+    <color name="red_base_color">#FF554C</color>
+    <color name="CC1B1C1D">#CC1B1C1D</color>
+    <color name="white">#ffffff</color>
+    <color name="oB3254">#0B3254</color>
+    <color name="s3">#333333</color>
+    <color name="s6">#666666</color>
+    <color name="s9">#999999</color>
+    <color name="CCCCCC">#CCCCCC</color>
+    <color name="EEEEEE">#EEEEEE</color>
+    <color name="DDDDDD">#DDDDDD</color>
+    <color name="c191919">#191919</color>
+    <color name="c3E206A">#3E206A</color>
+    <color name="c8C5FFF">#8C5FFF</color>
+    <color name="c7340BC">#4c7340BC</color>
+    <color name="DE3D41">#DE3D41</color>
+    <color name="c2D1D43">#2D1D43</color>
+    <color name="c593E78">#593E78</color>
+    <color name="bg_user_center">#B2000000</color>
+    <color name="cbcbcb">#cbcbcb</color>
+    <color name="c1F1F1F">#1F1F1F</color>
+    <color name="F2F2F2">#F2F2F2</color>
+    <color name="FFF6F6">#FFF6F6</color>
+    <color name="c676767">#676767</color>
+    <color name="FFF2F2">#FFF2F2</color>
+    <color name="c686868">#686868</color>
+    <color name="c482873">#482373</color>
+    <color name="alpha10_8C5FFF">#198c5fff</color>
+    <color name="E0DBDE">#E0DBDE</color>
+    <color name="DDDADC">#DDDADC</color>
+    <color name="alpha40_191919">#66191919</color>
+    <color name="alpha60_666666">#99666666</color>
+    <color name="alpha40_666666">#3f666666</color>
+    <color name="alpha4_593E78">#0A593E78</color>
+
+    <!--消息颜色-->
+    <color name="color_msg_green">#90FEC7</color>
+    <color name="color_msg_blue">#8CC8FF</color>
+    <color name="color_msg_red">#FF554C</color>
+    <color name="color_msg_yellow">#FFE088</color>
+    <color name="color_msg_orange">#FF8B72</color>
+    <color name="color_msg_purple">#7B97FF</color>
+    <color name="color_msg_showroom_gift">#F86C97</color>
+
+    <color name="gift_color_yellow">#FFC74A</color>
+    <color name="gift_color_blue">#81C8FF</color>
+    <color name="gift_color_red">#FF6D6F</color>
+    <color name="gift_color_orange">#FFA564</color>
+
+    <color name="bg_rb_exchange_checked">#8C5FFF</color>
+    <color name="bg_rb_exchange_unchecked">#30204B</color>
+
+    <!--币值涨跌-->
+    <color name="color_currency_up">#FD2E42</color>
+    <color name="color_currency_down">#28B996</color>
+    <color name="alpha50_white">#7fffffff</color>
+
+
+    <color name="minute_grayLine">#2D3945</color>
+    <color name="minute_blue">#00D0FC</color>
+    <color name="minute_yellow">#E7B448</color>
+    <color name="minute_black">#101419</color>
+    <color name="minute_jizhun">#7F9976</color>
+    <color name="minute_zhoutv">#858D93</color>
+    <color name="marker_bg">#1C232E</color>
+
+
+    <color name="colorPrimary">#482873</color>
+    <color name="colorPrimaryDark">#3E206A</color>
+    <color name="colorAccent">#482873</color>
+    <color name="windowsBg">#FFFFFF</color>
+
+    <!-- top -->
+    <color name="common_gray_bg">#F5F5F5</color>
+
+    <!-- text-->
+    <color name="text_color_common">#666666</color>
+    <color name="text_color_red">#FF0000</color>
+    <color name="text_color_orange">#FCAE05</color>
+    <color name="text_color_maroon">#CD0000</color>
+
+    <!-- common -->
+    <color name="common_1">#EEE9BF</color>
+    <color name="common_2">#C0FF3E</color>
+
+
+    <color name="marker_line_bg">#000000</color>
+    <color name="marker_text_bg">#000000</color>
+    <color name="border_color">#A7ADBC</color>
+    <color name="mine_label_txt">#A7ADBC</color>
+
+
+    <color name="ma5">#823E66</color>
+    <color name="ma10">#B99C7A</color>
+    <color name="ma20">#3C7193</color>
+    <color name="ma30">#7F9976</color>
+
+    <color name="increasing_color">#CD2626</color>
+    <color name="decreasing_color">#006400</color>
+
+    <drawable name="line_divider">#66666666</drawable>
+
+    <color name="FD2E42">#FD2E42</color>
+    <color name="c28B996">#28B996</color>
+    <color name="FFF3F3">#FFF3F3</color>
+    <color name="c1f1f1f">#1F1F1F</color>
+
+    <!--标题颜色-->
+    <color name="title_text_color">#FFFFFF</color>
+</resources>

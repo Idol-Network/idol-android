@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="375dp"
+        android:layout_height="15dp"
+        android:background="@color/s6"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="39.5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="群聊名称"
+            android:textColor="@color/EEEEEE"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_teamchat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="鹿晗生日众筹活动"
+            android:textColor="@color/DDDDDD"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/s6"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="39.5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="群公告"
+            android:textColor="@color/EEEEEE"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_teamchat_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="未打扰"
+            android:textColor="@color/DDDDDD"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/s6"/>
+
+    <Button
+        android:id="@+id/br_exitteam"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginRight="66dp"
+        android:layout_marginTop="27.5dp"
+        android:background="@drawable/bt_signup_shape"
+        android:text="删除并退出"/>
+</LinearLayout>

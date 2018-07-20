@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phone_register_shape"
+    android:orientation="vertical"
+    tools:context=".ui.activity.PurchasingActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/title_purchasing_activity"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/titleTextSize" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/s6" />
+
+    <com.warm.tablayout.TabLayout
+        android:id="@+id/tb_purchasing"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:tabBackground="@null"
+        app:tabIndicatorColor="#8C5FFF"
+        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorWidth="20dp"
+        app:tabSelectedTextColor="@color/white"
+        app:tabSelectedTextSize="15dp"
+        app:tabTextAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:tabTextColor="#CCFFFFFF"
+        app:tabTextSize="15dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/s6" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_purchasing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

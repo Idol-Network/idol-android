@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/hudongtiaokongcao" />
+    </item>
+    <item>
+        <clip
+            android:clipOrientation="vertical"
+            android:drawable="@drawable/hudongtiao"
+            android:gravity="bottom" />
+    </item>
+</layer-list>

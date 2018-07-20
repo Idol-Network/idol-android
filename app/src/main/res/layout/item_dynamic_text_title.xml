@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="9.5dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_dynamic_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_dynamic_title"
+        android:layout_marginLeft="13.5dp"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            fresco:placeholderImage="@drawable/base_head"
+            fresco:placeholderImageScaleType="focusCrop"
+            android:id="@+id/sdv_user_avatar"
+            android:layout_width="38.5dp"
+            android:layout_height="38.5dp"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:roundAsCircle="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/F2F2F2"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tv_user_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="2018-02-23"
+                android:textColor="@color/CCCCCC"
+                android:textSize="11sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_dynamic_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_dynamic_user"
+        android:layout_marginLeft="13.5dp"
+        android:layout_marginTop="12dp"
+        android:text=""
+        android:textColor="@color/F2F2F2"
+        android:textSize="13sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_dynamic_tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_dynamic_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_dynamic_likeNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/dianzan_da_xhdpi"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="9sp"/>
+
+        <TextView
+            android:id="@+id/tv_dynamic_playNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:drawableLeft="@drawable/pl_da"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="9sp"/>
+
+        <TextView
+            android:id="@+id/tv_dynamic_shareNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:drawableLeft="@drawable/dongtai_fengxiang"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="9sp"/>
+    </LinearLayout>
+</LinearLayout>

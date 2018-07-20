@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phone_register_shape"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/fanhui"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/welfare"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/titleTextSize"/>
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/welfare_header"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="13dp"
+                android:text="Idol trainee 88 signed photo only one person!"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="idol"
+                    android:textColor="@color/DE3D41"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tv_creattime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2018-02-23"
+                    android:textColor="@color/CCCCCC"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginTop="14dp"
+                android:background="#28ffffff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:text="@string/activities_info"
+                android:textColor="@color/white"
+                android:textSize="13sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="17.5dp"
+                android:background="@color/s6"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="6dp"
+                android:text="由Angelababy主演的电视剧《谈判官》已于近日收官，大家有没有被谢晓飞圈粉呢？作为全能型艺人，他一路坚持与拼搏，从不曾放弃梦想。期待演员黄子韬的下一部作品。今天团长来送福利啦！3月30日，我们将抽取2位幸运粉丝，送上黄子韬签名照，每人1张。
+\n另转发活动微博并关注@Idol ，3月30日我们将抽取1位幸运儿送上Angelababy签名照～
+点击底部【分享来报名】参与活动报名
+报名时间：3月9日 -3月30日
+抽奖时间：3月30日通过后台抽取并公布中奖名单
+备注：开奖前请勿修改微博名称，与APP内名称保持一致"
+                android:textColor="@color/FFF3F3"
+                android:textSize="12sp"/>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_bigimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                fresco:viewAspectRatio="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="21dp"
+                android:text="@string/take_fans"
+                android:textColor="@color/white"
+                android:textSize="13sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="9.5dp"
+                android:background="@color/s6"/>
+
+
+            <com.yiju.idol.ui.view.FlowTagLayout
+                android:id="@+id/ftl_fans_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_jointeam"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:background="@drawable/bt_login_shape"
+                android:layout_gravity="right"
+                android:layout_marginTop="2.5dp"
+                android:textColor="@color/white"
+                android:layout_width="70dp"
+                android:layout_height="21.5dp"
+                android:text="@string/join_teamchat"/>
+
+            <Button
+                android:id="@+id/bt_share"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="66dp"
+                android:layout_marginRight="66dp"
+                android:layout_marginTop="15.5dp"
+                android:background="@drawable/bt_signup_shape"
+                android:text="@string/share_join"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

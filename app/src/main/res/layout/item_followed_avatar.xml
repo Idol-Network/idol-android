@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fresco="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_avatar"
+        android:layout_width="31dp"
+        fresco:placeholderImage="@drawable/base_head"
+        fresco:placeholderImageScaleType="focusCrop"
+        android:layout_height="31dp"
+        android:layout_marginLeft="15dp"
+        fresco:roundAsCircle="true"/>
+</LinearLayout>

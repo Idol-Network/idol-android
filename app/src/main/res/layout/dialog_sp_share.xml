@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/E0DBDE"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.5dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="75.5dp"
+            android:layout_height="1dp"
+            android:src="@drawable/dialog_left_shape"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.5dp"
+            android:layout_marginRight="6.5dp"
+            android:text="@string/shareto"
+            android:textColor="@color/s9"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:layout_width="75.5dp"
+            android:layout_height="1dp"
+            android:src="@drawable/dialog_right_shape"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="32.5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/bt_share_weixin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="13.5dp"
+            android:drawableTop="@drawable/share_weixin"
+            android:text="微信"
+            android:textColor="@color/s9"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/bt_share_sina"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="13.5dp"
+            android:drawableTop="@drawable/share_sina"
+            android:text="微博"
+            android:textColor="@color/s9"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:gravity="center"
+            android:textStyle="normal"
+            android:id="@+id/bt_share_facebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="13.5dp"
+            android:drawableTop="@drawable/share_facebook"
+            android:text="FaceBook"
+            android:textAllCaps="false"
+            android:textColor="@color/s9"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:gravity="center"
+            android:textStyle="normal"
+            android:id="@+id/bt_share_twitter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="13.5dp"
+            android:drawableTop="@drawable/share_twitter"
+            android:text="Twitter"
+            android:textAllCaps="false"
+            android:textColor="@color/s9"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:gravity="center"
+            android:textStyle="normal"
+            android:id="@+id/bt_share_copy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="13.5dp"
+            android:drawableTop="@drawable/share_copy"
+            android:text="Copy"
+            android:textAllCaps="false"
+            android:textColor="@color/s9"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="34dp"
+        android:textAllCaps="false"
+        android:background="@null"
+        android:text="@string/dialog_cancel"
+        android:textColor="@color/s9"
+        android:textSize="15sp"/>
+</LinearLayout>

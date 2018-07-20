@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="103dp"
+    android:background="#196939D1"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="18dp">
+
+        <TextView
+            android:id="@+id/tv_in_and_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/entrustment_buy"
+            android:textColor="@color/decreasing_color"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/price_usdt"
+            android:textColor="@color/CCCCCC"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="0.00"
+            android:textColor="@color/CCCCCC"
+            android:textSize="12dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1.1">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="00:00:00"
+            android:textColor="#80FFFFFF"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_item_title_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/num_eos"
+            android:textColor="@color/CCCCCC"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="0.00"
+            android:textColor="@color/CCCCCC"
+            android:textSize="12dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="3dp"
+            android:text="@string/entrustment_cancel"
+            android:textColor="#80FFFFFF"
+            android:textSize="13dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title_transfor_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/num_real_eos"
+            android:textColor="@color/CCCCCC"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_real_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="23dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="0.00"
+            android:textColor="@color/CCCCCC"
+            android:textSize="12dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

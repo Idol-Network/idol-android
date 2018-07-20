@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_bar_anchor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bg_av_head"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:orientation="horizontal">
+            <!--android:paddingRight="7dp"-->
+
+            <FrameLayout
+                android:layout_width="40dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="1.5dp">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    fresco:actualImageScaleType="fitXY"
+                    fresco:failureImage="@drawable/base_head"
+                    fresco:failureImageScaleType="fitXY"
+                    fresco:placeholderImage="@drawable/base_head"
+                    fresco:placeholderImageScaleType="fitXY"
+                    fresco:roundAsCircle="true" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_vip"
+                    android:layout_width="25dp"
+                    android:visibility="gone"
+                    android:layout_height="15dp"
+                    android:layout_gravity="bottom|right"
+                    fresco:actualImageScaleType="fitCenter" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/content_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <!--android:layout_marginLeft="3dp"-->
+
+                    <TextView
+                        android:id="@+id/tv_nick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxEms="5"
+                        android:singleLine="true"
+                        android:text="@string/app_name"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_audience_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="在线 0"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/content_btn_follow"
+                    android:layout_width="65dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="-12dp"
+                    android:layout_toRightOf="@+id/content_nick"
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        android:id="@+id/probar_wave"
+                        android:layout_width="65dp"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:indeterminate="true"
+                        android:indeterminateDrawable="@drawable/anim_btn_follow"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/tv_follow"
+                        android:layout_width="42dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/btn_follow" />
+                </FrameLayout>
+            </RelativeLayout>
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_follow"-->
+            <!--android:layout_width="42dp"-->
+            <!--android:layout_height="22dp"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--android:background="@drawable/bg_av_tv_follow"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/follow"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/size_s_13"-->
+            <!--android:visibility="gone" />-->
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_audience"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/ic_close"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_applause_num"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:background="@drawable/bg_av_applause"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/zhangshegnxiangyou"
+            android:gravity="center_vertical"
+            android:paddingLeft="7dp"
+            android:paddingRight="5dp"
+            android:text="掌声 0"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_star_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:shadowColor="@color/s3"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<include-->
+            <!--android:id="@+id/layout_goods"-->
+            <!--layout="@layout/layout_av_goods"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:visibility="gone" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_trainee"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginTop="3.5dp"-->
+            <!--android:src="@drawable/lianxisheng"-->
+            <!--android:visibility="gone" />-->
+    <!--</FrameLayout>-->
+
+</LinearLayout>

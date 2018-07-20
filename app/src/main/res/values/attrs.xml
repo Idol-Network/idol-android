@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--下拉刷新-->
+    <declare-styleable name="AbsClassicRefreshView">
+        <attr name="pull_style" format="enum">
+            <enum name="style_default" value="0" />
+            <enum name="style_scale" value="1" />
+            <enum name="style_pin" value="2" />
+            <enum name="style_follow_scale" value="3" />
+            <enum name="style_follow_pin" value="4" />
+            <enum name="style_follow_center" value="5" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SubsamplingScaleImageView">
+        <attr name="src" format="reference"/>
+        <attr name="assetName" format="string"/>
+        <attr name="panEnabled" format="boolean"/>
+        <attr name="zoomEnabled" format="boolean"/>
+        <attr name="quickScaleEnabled" format="boolean"/>
+        <attr name="tileBackgroundColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="LimitedEditText">
+        <attr name="limitBytes" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="WeatherView">
+        <attr name="startingWeather" format="enum">
+            <enum name="SUN" value="2"/>
+            <enum name="RAIN" value="0"/>
+            <enum name="SNOW" value="1"/>
+        </attr>
+        <attr name="lifeTime" format="integer"/>
+        <attr name="fadeOutTime" format="integer"/>
+
+        <attr name="numParticles" format="integer"/>
+        <attr name="fps" format="integer"/>
+        <attr name="angle" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="backColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="roundTextSize" format="dimension" />
+        <attr name="roundTextSize2" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TextProgressBar">
+        <attr name="thumb" format="reference" />
+        <attr name="textSize" format="dimension|reference" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/btn_00"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_01"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_02"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_03"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_04"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_05"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_06"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_07"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_08"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_09"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_10"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_11"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_12"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_13"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_14"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_15"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_16"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_17"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_18"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_19"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_20"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_21"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_22"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_23"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_24"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_25"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_26"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_27"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_28"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_29"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_30"
+        android:duration="50" />
+    <item
+        android:drawable="@drawable/btn_31"
+        android:duration="50" />
+
+</animation-list>

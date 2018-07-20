@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:orientation="horizontal"
+    android:paddingRight="30dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_nick_danmaku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="#FFE088"
+            android:textSize="@dimen/text_size_15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_msg_danmaku"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:background="@drawable/danmubeijing"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:paddingLeft="23dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="38dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_head_danmaku"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            fresco:actualImageScaleType="fitXY"
+            fresco:failureImage="@drawable/base_head"
+            fresco:failureImageScaleType="fitXY"
+            fresco:placeholderImage="@drawable/base_head"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:roundAsCircle="true" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_level_danmaku"
+            android:layout_width="25dp"
+            android:layout_height="15dp"
+            android:layout_gravity="bottom|right"
+            fresco:actualImageScaleType="fitCenter" />
+    </FrameLayout>
+
+</FrameLayout>

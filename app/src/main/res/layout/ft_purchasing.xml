@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.dkzwm.widget.srl.SmoothRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/srl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:sr_empty_layout="@layout/layout_empty_list"
+    app:sr_enable_over_scroll="false"
+    app:sr_error_layout="@layout/layout_error_list"
+    app:sr_header_background_color="@color/transparent"
+    app:sr_state="content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_purchasing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+</me.dkzwm.widget.srl.SmoothRefreshLayout>

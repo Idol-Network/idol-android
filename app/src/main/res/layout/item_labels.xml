@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_tv_tag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="11dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/label_tag_bg"
+    android:paddingBottom="4dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="12dp"
+    android:paddingTop="4dp"
+    android:text="TAG"
+    android:textColor="@color/s9"
+    android:textSize="12sp"/>
+

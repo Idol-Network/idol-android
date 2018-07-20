@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/dialog_avatar_center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_take_pic"
+            android:layout_width="match_parent"
+            android:layout_height="48.5dp"
+            android:gravity="center"
+            android:text="拍照"
+            android:textColor="@color/s6"
+            android:textSize="15sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#e1e1e1"/>
+
+        <TextView
+            android:id="@+id/tv_seleted_pto"
+            android:layout_width="match_parent"
+            android:layout_height="48.5dp"
+            android:gravity="center"
+            android:text="本地选择"
+            android:textColor="@color/s6"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="39.5dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/dialog_avatar_bottom"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/s6"
+        android:textSize="15sp"/>
+</LinearLayout>

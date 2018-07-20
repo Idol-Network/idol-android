@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phone_register_shape">
+
+    <ImageView
+        android:id="@+id/iv_info_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18.5dp"
+        android:padding="15dp"
+        android:src="@drawable/fanhui"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_info_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47.5dp"
+            android:text="@string/name_and_password"
+            android:textColor="@color/EEEEEE"
+            android:textSize="23sp"/>
+
+        <TextView
+            android:id="@+id/tv_info_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47.5dp"
+            android:layout_marginTop="13.5dp"
+            android:text="@string/set_name_pwd"
+            android:textColor="@color/EEEEEE"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_info_name"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginLeft="47.5dp"
+            android:layout_marginRight="47.5dp"
+            android:layout_marginTop="41dp"
+            android:background="@null"
+            android:hint="@string/full_name"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/DDDDDD"
+            android:textColorHint="@color/DDDDDD"/>
+
+        <View
+            android:id="@+id/view_info_1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="47.5dp"
+            android:layout_marginRight="47.5dp"
+            android:background="@color/CCCCCC"/>
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/et_info_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginLeft="47.5dp"
+            android:layout_marginRight="47.5dp"
+            android:background="@null"
+            android:hint="@string/password"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/DDDDDD"
+            android:textColorHint="@color/DDDDDD"/>
+
+        <View
+            android:id="@+id/view_info_2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="47.5dp"
+            android:layout_marginRight="47.5dp"
+            android:background="@color/CCCCCC"/>
+
+        <Button
+            android:id="@+id/bt_info_next"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="58.5dp"
+            android:layout_marginRight="58.5dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/bt_signup_shape"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_info_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"
+        android:text="@string/login_1"
+        android:textColor="@color/EEEEEE"
+        android:textSize="13sp"/>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom">
+
+    <include layout="@layout/view_dianzan_layout" /><!--点赞-->
+
+    <include layout="@layout/fullscreen_gift" /><!--全屏动画 移动到最下层-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_strength"-->
+        <!--style="@style/text_shadow"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/layout_gift_menu"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginBottom="6dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:text="当前体力0"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/size_s_14"-->
+        <!--android:visibility="gone" />-->
+
+    <include layout="@layout/layout_chat" />
+
+    <!--<include layout="@layout/fullscreen_gift" />&lt;!&ndash;全屏动画&ndash;&gt;-->
+
+    <!--<include-->
+    <!--android:id="@+id/layout_gift_menu"-->
+    <!--layout="@layout/gift_menu" />-->
+
+
+</FrameLayout>

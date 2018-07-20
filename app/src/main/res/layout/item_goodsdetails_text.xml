@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_goods_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="22dp"
+        android:lineSpacingExtra="10dp"
+        android:text="本款Tod's Wave迷你背包精选牛皮制成, 以阿尔坎塔拉织物衬里, 前部覆以撞色革带, 两端以按扣固定, 将拉链藏于其下，底部饰以经典的橡胶豆豆, 特别的可拆卸肩带设计使这款Tod's Wave手袋可作斜跨包或背包两用, 独具一格的创新设计与奢华尽显的鲜明特色使此款手袋成为时尚手袋的典范之作。"
+        android:textColor="@color/s3"
+        android:textSize="12sp"/>
+</LinearLayout>

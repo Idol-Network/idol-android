@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phone_register_shape">
+
+    <RelativeLayout
+        android:id="@+id/rl_dynamic_title"
+        android:layout_width="match_parent"
+        android:layout_height="42.5dp">
+
+        <ImageView
+            android:id="@+id/iv_dynamic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@drawable/fanhui"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/dynamic"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/titleTextSize"/>
+    </RelativeLayout>
+
+    <me.dkzwm.widget.srl.SmoothRefreshLayout
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/rl_dynamic_title"
+        android:id="@+id/srl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2.5dp"
+        android:orientation="vertical"
+        app:sr_empty_layout="@layout/layout_empty_list"
+        app:sr_enable_over_scroll="false"
+        app:sr_error_layout="@layout/layout_error_list"
+        app:sr_header_background_color="@color/transparent"
+        app:sr_state="content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_dynamic_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"/>
+    </me.dkzwm.widget.srl.SmoothRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c482873">
+
+        <EditText
+            android:id="@+id/et_dynamic_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/bt_dynamic_send"
+            android:background="@null"
+            android:hint="@string/tosay"
+            android:maxHeight="75dp"
+            android:paddingBottom="13dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="13dp"
+            android:textColor="@color/CCCCCC"
+            android:textColorHint="@color/CCCCCC"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/bt_dynamic_send"
+            android:layout_width="49dp"
+            android:layout_height="29dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="15.5dp"
+            android:background="@drawable/bt_send_shape"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

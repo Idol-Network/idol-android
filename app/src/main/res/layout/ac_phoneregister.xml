@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phone_register_shape"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_phonereg_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18.5dp"
+        android:padding="15dp"
+        android:src="@drawable/fanhui"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_mobile_regist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_phonereg_1"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginLeft="47.5dp"
+                android:layout_marginRight="47.5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_phonereg_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/country_region"
+                    android:textColor="@color/EEEEEE"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_phonereg_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="14.5dp"
+                    android:layout_toRightOf="@+id/tv_phonereg_1"
+                    android:gravity="center_vertical"
+                    android:text="China"
+                    android:textColor="@color/EEEEEE"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/xuanze_diqu"/>
+            </RelativeLayout>
+            <!--phonereg-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="47.5dp"
+                android:layout_marginRight="47.5dp"
+                android:background="@color/s6"/>
+
+            <LinearLayout
+                android:id="@+id/ll_phonereg_1"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="47.5dp"
+                android:layout_marginRight="47.5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_country_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+86"
+                    android:textColor="@color/DDDDDD"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/et_phonereg_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="14dp"
+                    android:background="@null"
+                    android:hint="@string/phonenumber"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/DDDDDD"
+                    android:textColorHint="@color/s9"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/et_email_regist"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginLeft="47.5dp"
+            android:layout_marginRight="47.5dp"
+            android:background="@null"
+            android:hint="@string/email"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/DDDDDD"
+            android:textColorHint="@color/s9"/>
+
+        <View
+            android:id="@+id/view_phonereg_2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="47.5dp"
+            android:layout_marginRight="47.5dp"
+            android:background="@color/s6"/>
+
+        <TextView
+            android:id="@+id/tv_switch_regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47.5dp"
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            android:text="@string/email_regist"
+            android:textColor="@color/white"
+            android:textSize="13sp"/>
+
+        <Button
+            android:id="@+id/bt_phonereg_next"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/bt_signup_shape"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_phonereg_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="74dp"
+            android:layout_marginRight="74dp"
+            android:layout_marginTop="10.5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/phonelogin_1"
+            android:textColor="@color/CCCCCC"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_phonereg_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:text="@string/login_1"
+        android:textColor="@color/CCCCCC"
+        android:textSize="13sp"/>
+</RelativeLayout>

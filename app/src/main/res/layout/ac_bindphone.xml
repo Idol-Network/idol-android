@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phone_register_shape"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_bindphone_title"
+        android:layout_width="match_parent"
+        android:layout_height="42.5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@drawable/fanhui"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/edit_the_cell_phone_number"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/titleTextSize"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/alpha60_666666"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_phonereg_1"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/country_region"
+                android:textColor="@color/CCCCCC"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14.5dp"
+                android:layout_toRightOf="@+id/tv"
+                android:gravity="center_vertical"
+                android:text="China"
+                android:textColor="@color/EEEEEE"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/xuanze_diqu"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/alpha60_666666"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48.5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/tv_country_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+86"
+                android:textColor="@color/CCCCCC"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/et_edit_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/phonenumber"
+                android:inputType="number"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/CCCCCC"
+                android:textColorHint="@color/CCCCCC"/>
+
+            <Button
+                android:id="@+id/bt_getcode"
+                android:layout_width="93.5dp"
+                android:layout_height="24.5dp"
+                android:background="@drawable/get_code_shape"
+                android:text="Get Code"
+                android:textAllCaps="false"
+                android:textColor="@color/CCCCCC"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/alpha60_666666"/>
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/et_edit_code"
+            android:layout_width="match_parent"
+            android:layout_height="48.5dp"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/s9"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/alpha60_666666"/>
+
+        <Button
+            android:id="@+id/bt_correct"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:layout_marginTop="51.5dp"
+            android:background="@drawable/bt_signup_shape"
+            android:text="Correct"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/bangding_chenggong"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:text="@string/binding_success"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginRight="66dp"
+            android:layout_marginTop="51.5dp"
+            android:background="@drawable/bt_signup_shape"
+            android:text="@string/back"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_enter_linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="18dp"
+    android:layout_marginTop="32dp"
+    android:visibility="invisible">
+
+
+    <ImageView
+        android:id="@+id/iv_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/paodaoguangban"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/paodao"
+        android:gravity="bottom"
+        android:paddingLeft="10dp"
+        android:paddingRight="12dp">
+
+        <com.yiju.idol.ui.view.EnterTextView
+            android:id="@+id/tv_level_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.5dp"
+            android:shadowColor="#80FFE1AA"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textColor="#690720"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="-3dp"
+            android:text="级"
+            android:textColor="#690720"
+            android:textSize="@dimen/text_size_9" />
+
+        <TextView
+            style="@style/text_shadow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="4dp"
+            android:shadowColor="#80830022"
+            android:text="欢迎"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13" />
+
+        <TextView
+            android:id="@+id/tv_nick_enter"
+            style="@style/text_shadow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="3dp"
+            android:ellipsize="end"
+            android:maxEms="5"
+            android:shadowColor="#80830022"
+            android:singleLine="true"
+            android:textColor="#FFFFE088"
+            android:textSize="@dimen/text_size_13" />
+
+        <TextView
+            style="@style/text_shadow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="3dp"
+            android:shadowColor="#80830022"
+            android:text="进入直播间"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13" />
+
+    </LinearLayout>
+
+</FrameLayout>

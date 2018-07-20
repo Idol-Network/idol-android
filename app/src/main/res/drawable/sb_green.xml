@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/jys_lqsq_xhdpi"
+    android:tileMode="disabled" android:gravity="center_vertical" >
+</bitmap>

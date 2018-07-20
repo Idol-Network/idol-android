@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            fresco:actualImageScaleType="fitXY"
+            fresco:failureImage="@drawable/bg_base_pic"
+            fresco:failureImageScaleType="fitXY"
+            fresco:placeholderImage="@drawable/bg_base_pic"
+            fresco:placeholderImageScaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10.5dp"
+            android:background="@drawable/bg_btn_fetter_pay"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/fetter_pay"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:background="@drawable/tuji_jianbian"
+        android:layout_height="32dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_num_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/dianzan_xiao_xhdpi"
+            android:drawablePadding="4.5dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="9dp" />
+
+        <TextView
+            android:id="@+id/tv_num_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7.5dp"
+            android:drawableLeft="@drawable/pinglun_xiaoxhdpi"
+            android:drawablePadding="4.5dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="9dp" />
+    </LinearLayout>
+
+</FrameLayout>

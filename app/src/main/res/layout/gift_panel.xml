@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#cc000000">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_gift"
+            android:layout_width="match_parent"
+            android:layout_height="220dp" />
+
+        <com.yiju.idol.ui.view.GiftPagerIndicatorView
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="4.5dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="充值："
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xingbi2" />
+
+            <TextView
+                android:id="@+id/tv_star_coin_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/liwuxiangyoujiantou"
+                android:gravity="center_vertical"
+                android:paddingRight="15dp"
+                android:text="0"
+                android:textColor="#FF554C"
+                android:textSize="17dp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+            <Button
+                android:id="@+id/btn_send_gift"
+                android:layout_width="65dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_btn_panel_send"
+                android:enabled="false"
+                android:text="@string/send_msg"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_combo"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_gravity="right|bottom"
+        android:background="@drawable/liansonganniubeijing"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_combo1"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/liansonganniu"
+            android:shadowColor="@color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="66"
+            android:textColor="#FF554C"
+            android:textSize="@dimen/text_size_11" />
+
+        <Button
+            android:id="@+id/btn_combo2"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="47dp"
+            android:background="@drawable/liansonganniu"
+            android:shadowColor="@color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="188"
+            android:textColor="#FF554C"
+            android:textSize="@dimen/text_size_11" />
+
+        <Button
+            android:id="@+id/btn_combo3"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/liansonganniu"
+            android:shadowColor="@color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="520"
+            android:textColor="#FF554C"
+            android:textSize="@dimen/text_size_11" />
+
+        <Button
+            android:id="@+id/btn_combo4"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/liansonganniu"
+            android:shadowColor="@color/white"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="1314"
+            android:textColor="#FF554C"
+            android:textSize="@dimen/text_size_11" />
+
+        <Button
+            android:id="@+id/btn_send_gift_combo"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/btn_gift_panel_send_gift"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="14dp"
+            android:shadowColor="@color/white"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="30"
+            android:textColor="#FF554C"
+            android:textSize="@dimen/text_size_18" />
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_title_top_contribution"
+    android:layout_width="match_parent"
+    android:layout_height="66.5dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="130dp"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/iv_contribution_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/caitiaobang1" />
+
+    <ImageView
+        android:id="@+id/iv_contribution_cap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/content_user"
+        android:src="@drawable/huangguanbang1" />
+
+
+    <LinearLayout
+        android:id="@+id/content_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:gravity="center_vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_contribution_head"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="6dp"
+            fresco:actualImageScaleType="fitXY"
+            fresco:failureImage="@drawable/base_head"
+            fresco:failureImageScaleType="fitXY"
+            fresco:placeholderImage="@drawable/base_head"
+            fresco:placeholderImageScaleType="fitXY"
+            fresco:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/tv_contribution_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:ellipsize="end"
+            android:shadowColor="#25808080"
+            android:shadowDy="1"
+            android:maxEms="7"
+            android:singleLine="true"
+            android:textColor="#FFE088"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#25808080"
+            android:shadowDy="1"
+            android:singleLine="true"
+            android:text="进入了直播间"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_av"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phone_register_shape"
+    tools:context="com.yiju.idol.ui.activity.AVActivity">
+
+    <!--<include layout="@layout/statusbar_layout" />-->
+
+    <FrameLayout
+        android:id="@+id/content_surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yiju.idol.ui.view.weatherview.WeatherView
+            android:id="@+id/weater"
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+        <!--<FrameLayout-->
+        <!--android:id="@+id/content_bg"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:foreground="@drawable/quanbuxingqiu_renqixingqiu_beijingtu2">-->
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_bg_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/phone_register_shape"
+            app:actualImageScaleType="centerCrop" />
+        <!--</FrameLayout>-->
+
+        <SurfaceView
+            android:id="@+id/surfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:keepScreenOn="true"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_bg_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/quanbuxingqiu_renqixingqiu_beijingtu2" />
+
+        <include
+            android:id="@+id/layout_pause"
+            layout="@layout/layout_pause_av" />
+
+        <include layout="@layout/view_dianzan_layout" />
+
+
+        <!--<ProgressBar-->
+        <!--android:id="@+id/view_loading"-->
+        <!--style="?android:attr/progressBarStyleHorizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#4c000000"-->
+        <!--android:indeterminateDrawable="@drawable/progress_living_loading"-->
+        <!--android:indeterminateOnly="true"-->
+        <!--android:visibility="gone"/>-->
+
+        <include layout="@layout/room_loading" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_loading"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="@drawable/bg_loading"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:paddingLeft="9dp"-->
+        <!--android:paddingRight="9dp"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:text="@string/is_loading"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/size_s_14"-->
+        <!--android:visibility="gone" />-->
+
+    </FrameLayout>
+
+    <include layout="@layout/layout_announcement" />
+
+    <com.yiju.idol.ui.view.VerticalProgressBar
+        android:id="@+id/proBar_strength"
+        android:layout_width="wrap_content"
+        android:layout_height="334dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="107dp"
+        android:visibility="gone" />
+
+    <include layout="@layout/layout_av_bottom_bar" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="13dp"
+        android:src="@drawable/ic_close" />
+
+    <ImageView
+        android:id="@+id/iv_show_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/qingpingfanhui"
+        android:visibility="gone" />
+
+    <include layout="@layout/layout_av_top_bar_audience" />
+
+
+    <ViewStub
+        android:id="@+id/stub_end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/activity_end" />
+
+</FrameLayout>

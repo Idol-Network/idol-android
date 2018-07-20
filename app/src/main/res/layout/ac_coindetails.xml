@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/phone_register_shape"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_dynamic_title"
+        android:layout_width="match_parent"
+        android:layout_height="42.5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@drawable/fanhui"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/titleTextSize"/>
+
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/alpha40_666666"/>
+    </RelativeLayout>
+
+
+    <com.yiju.idol.ui.view.MyScrollView
+        android:id="@+id/nestedscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_dynamic_title"
+        android:layout_marginBottom="44dp"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_basic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="1.55"
+                    android:textColor="@color/FD2E42"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/tv_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_price"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="+5.09%"
+                    android:textColor="@color/CCCCCC"
+                    android:textSize="13sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/high"
+                            android:textColor="@color/s9"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_max_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text=""
+                            android:textColor="@color/CCCCCC"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/low"
+                            android:textColor="@color/s9"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_min_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text=""
+                            android:textColor="@color/CCCCCC"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="24H"
+                            android:textColor="@color/s9"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_24h_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text=""
+                            android:textColor="@color/CCCCCC"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/alpha40_666666"/>
+            </RelativeLayout>
+
+            <com.yiju.idol.ui.view.MyTabLayout
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_below="@+id/rl_basic"
+                app:tabIndicatorColor="@color/c8C5FFF"
+                app:tabIndicatorHeight="1dp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/c8C5FFF"
+                app:tabTextAppearance="@style/TabLayoutTextSizeStyle"
+                app:tabTextColor="@color/EEEEEE"/>
+
+            <com.yiju.idol.ui.view.NoTouchScrollViewpager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="325dp"
+                android:layout_below="@+id/tab"/>
+
+            <LinearLayout
+                android:id="@+id/ll_tools2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/view_pager">
+
+                <RadioGroup
+                    android:id="@+id/rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_depth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="32dp"
+                        android:text="@string/depth"
+                        android:textColor="@drawable/coin_details_selector"
+                        android:textSize="13sp"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_trading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="32dp"
+                        android:text="@string/trade"
+                        android:textColor="@drawable/coin_details_selector"
+                        android:textSize="13sp"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:paddingLeft="32dp"
+                        android:paddingRight="15dp"
+                        android:text="@string/details"
+                        android:textColor="@drawable/coin_details_selector"
+                        android:textSize="13sp"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/ll_tools2"
+                android:background="@color/alpha40_666666"/>
+
+            <FrameLayout
+                android:id="@+id/fl_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view"
+                android:minHeight="350dp"/>
+
+        </RelativeLayout>
+    </com.yiju.idol.ui.view.MyScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c8C5FFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_coin_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/buy"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16.5dp"
+            android:layout_marginTop="16.5dp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_coin_transfer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/sell"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16.5dp"
+            android:layout_marginTop="16.5dp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_coin_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/addbuy"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tools1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rl_dynamic_title"
+        android:orientation="horizontal"/>
+</RelativeLayout>

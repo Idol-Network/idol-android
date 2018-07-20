@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phone_register_shape"
+    tools:context=".ui.activity.AddAddressActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/title_add_address_activity"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/titleTextSize" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:text="@string/save_opinion"
+            android:textColor="#8C5FFF"
+            android:textSize="14dp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_desc_receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="@string/add_address_receiver"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fl_title" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="39.5dp"
+        android:background="#99666666"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fl_title" />
+
+    <TextView
+        android:id="@+id/tv_desc_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="@string/add_address_phone"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="39.5dp"
+        android:background="#99666666"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+    <TextView
+        android:id="@+id/tv_desc_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="@string/add_address_rigion"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider3" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="39.5dp"
+        android:background="#99666666"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+    <TextView
+        android:id="@+id/tv_desc_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="@string/add_address_state"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider4" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="39.5dp"
+        android:background="#99666666"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider3" />
+
+    <TextView
+        android:id="@+id/tv_desc_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_address_detail_address"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider4" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="69dp"
+        android:background="#99666666"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider4" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/br_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="tv_desc_reciever,tv_desc_phone,tv_desc_country,tv_desc_state,tv_desc_detail" />
+
+    <EditText
+        android:id="@+id/et_receiver"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:hint="@string/add_address_intput_receiver"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/s9"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@id/divider1"
+        app:layout_constraintLeft_toRightOf="@id/br_item"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fl_title" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:hint="@string/add_address_input_phone"
+        android:inputType="phone"
+        android:maxLength="14"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/s9"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@id/divider2"
+        app:layout_constraintLeft_toRightOf="@id/br_item"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+    <TextView
+        android:id="@+id/tv_country"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:drawableRight="@drawable/jys_dh"
+        android:gravity="center_vertical"
+        android:hint="@string/add_address_choose"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/s9"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@id/divider3"
+        app:layout_constraintLeft_toRightOf="@id/br_item"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:drawableRight="@drawable/jys_dh"
+        android:gravity="center_vertical"
+        android:hint="@string/add_address_choose"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/s9"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@id/divider4"
+        app:layout_constraintLeft_toRightOf="@id/br_item"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider3" />
+
+    <EditText
+        android:id="@+id/et_detail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/add_address_input_detail_address"
+        android:textColor="@color/white"
+        android:textColorHint="@color/s9"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@id/divider5"
+        app:layout_constraintLeft_toRightOf="@id/br_item"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_desc_detail" />
+
+    <android.support.constraint.Group
+        android:id="@+id/gp_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tv_desc_state,tv_state,divider4" />
+
+
+</android.support.constraint.ConstraintLayout>

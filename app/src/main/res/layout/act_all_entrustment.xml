@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phone_register_shape"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/titleTextSize" />
+    </FrameLayout>
+
+    <me.dkzwm.widget.srl.SmoothRefreshLayout
+        android:id="@+id/srl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:sr_empty_layout="@layout/layout_empty_current_entrustment"
+        app:sr_enable_over_scroll="false"
+        app:sr_error_layout="@layout/layout_error_list"
+        app:sr_header_background_color="@color/transparent"
+        app:sr_state="empty">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_all_enstrustment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </me.dkzwm.widget.srl.SmoothRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phone_register_shape"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_userhome_title"
+        android:layout_width="match_parent"
+        android:layout_height="42.5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@drawable/fanhui"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/user_home"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/titleTextSize"/>
+    </RelativeLayout>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_marginTop="15dp"
+        android:id="@+id/sdv_user_avatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:placeholderImage="@drawable/base_head"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundAsCircle="true"
+        fresco:roundingBorderColor="@color/border_color"
+        fresco:roundingBorderWidth="1dp"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="19dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="23sp"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_user_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:drawableLeft="@drawable/dingwei"
+        android:drawablePadding="3dp"
+        android:gravity="center_vertical"
+        android:text="Taiwan, China"
+        android:textColor="@color/CCCCCC"
+        android:textSize="11sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="19.5dp"
+        android:paddingTop="19.5dp">
+
+        <LinearLayout
+            android:id="@+id/ll_signin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/EEEEEE"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/sign_in"
+                android:textColor="@color/CCCCCC"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_follow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/EEEEEE"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/following"
+                android:textColor="@color/CCCCCC"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_stars_focus"
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp"
+        android:drawableRight="@drawable/right"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/stars_in_focus"
+        android:textColor="@color/CCCCCC"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/alpha60_666666"/>
+
+    <TextView
+        android:id="@+id/tv_personal_information"
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp"
+        android:drawableRight="@drawable/right"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/personal_information"
+        android:textColor="@color/CCCCCC"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/alpha60_666666"/>
+
+    <TextView
+        android:id="@+id/tv_purchasing_list"
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp"
+        android:drawableRight="@drawable/right"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/purchasing_list"
+        android:textColor="@color/CCCCCC"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/alpha60_666666"/>
+
+    <TextView
+        android:id="@+id/tv_app_setting"
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp"
+        android:drawableRight="@drawable/right"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/app_settings"
+        android:textColor="@color/CCCCCC"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/alpha60_666666"/>
+
+    <LinearLayout
+        android:id="@+id/ll_about_ldol"
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/about_idol"
+            android:textColor="@color/CCCCCC"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_ldol_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="7dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/s9"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/alpha60_666666"/>
+
+</LinearLayout>

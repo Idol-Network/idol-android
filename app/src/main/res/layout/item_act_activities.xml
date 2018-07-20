@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:failureImage="@drawable/bg_base_pic"
+            fresco:failureImageScaleType="fitXY"
+            fresco:placeholderImage="@drawable/bg_base_pic"
+            fresco:placeholderImageScaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_item_act_activities_tag"
+            android:gravity="center_vertical"
+            android:paddingLeft="5.5dp"
+            android:paddingRight="5.5dp"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_crowdfunding_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/canyu_xhdpi"
+            android:drawablePadding="5.5dp"
+            android:textColor="@color/white"
+            android:textSize="11dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="13dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3.5dp">
+
+        <TextView
+            android:id="@+id/tv_short_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Idol"
+            android:textColor="#DE3D41"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/CCCCCC"
+            android:textSize="11dp" />
+    </FrameLayout>
+
+</LinearLayout>

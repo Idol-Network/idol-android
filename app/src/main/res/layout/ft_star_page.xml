@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.yiju.idol.ui.view.JZVideoPlayerSimple
+        android:id="@+id/jzv_simple"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_gallery2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:failureImage="@drawable/phone_register_shape"
+        fresco:failureImageScaleType="fitXY"
+        fresco:placeholderImage="@drawable/phone_register_shape"
+        fresco:placeholderImageScaleType="fitXY" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:failureImage="@drawable/phone_register_shape"
+        fresco:failureImageScaleType="fitXY"
+        fresco:placeholderImage="@drawable/phone_register_shape"
+        fresco:placeholderImageScaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/ll_video_disc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="38dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_star_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_star_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.5dp"
+            android:textColor="@color/white"
+            android:textSize="14.5dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_gesture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>
