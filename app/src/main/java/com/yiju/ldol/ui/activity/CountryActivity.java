@@ -11,12 +11,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import com.yiju.idol.R;
-import com.yiju.idol.api.APIHelper;
-import com.yiju.idol.api.CallBack;
-import com.yiju.idol.base.BaseImmersionActivity;
-import com.yiju.idol.bean.response.CountryListResp;
-import com.yiju.idol.ui.adapter.CountryListAdapter;
+import com.yiju.ldol.base.BaseImmersionActivity;
+import com.yiju.ldol.bean.response.CountryListResp;
 
 import java.util.ArrayList;
 import java.util.List;

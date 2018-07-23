@@ -11,19 +11,12 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.mcxtzhang.swipemenulib.SwipeMenuLayout;
-import com.yiju.idol.R;
-import com.yiju.idol.api.APIHelper;
-import com.yiju.idol.api.BaseReslut;
-import com.yiju.idol.api.CallBack;
-import com.yiju.idol.base.BaseImmersionActivity;
-import com.yiju.idol.base.entity.IEventType;
-import com.yiju.idol.bean.response.AddressItemBean;
-import com.yiju.idol.bean.response.AddressListResp;
-import com.yiju.idol.ui.adapter.AddressAdapter;
-import com.yiju.idol.ui.view.SimpleDividerItemDecoration;
-import com.yiju.idol.utils.DensityUtil;
-import com.yiju.idol.utils.DialogUtils;
+import com.yiju.ldol.base.BaseImmersionActivity;
+import com.yiju.ldol.bean.response.AddressItemBean;
+import com.yiju.ldol.bean.response.AddressListResp;
+import com.yiju.ldol.ui.view.SimpleDividerItemDecoration;
+import com.yiju.ldol.utils.DensityUtil;
+import com.yiju.ldol.utils.DialogUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;

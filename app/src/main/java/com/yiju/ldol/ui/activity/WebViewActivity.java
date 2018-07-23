@@ -17,9 +17,8 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.yiju.idol.R;
-import com.yiju.idol.base.BaseImmersionActivity;
-import com.yiju.idol.utils.JSKit;
+import com.yiju.ldol.base.BaseImmersionActivity;
+import com.yiju.ldol.utils.JSKit;
 
 import butterknife.BindView;
 import butterknife.OnClick;

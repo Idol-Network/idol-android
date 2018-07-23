@@ -13,39 +13,23 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.gyf.barlibrary.OnKeyboardListener;
-import com.yiju.idol.R;
-import com.yiju.idol.api.APIHelper;
-import com.yiju.idol.api.BaseReslut;
-import com.yiju.idol.api.CallBack;
-import com.yiju.idol.base.App;
-import com.yiju.idol.base.BaseImmersionActivity;
-import com.yiju.idol.base.entity.IMultiItemType;
-import com.yiju.idol.bean.DetailsReturnData;
-import com.yiju.idol.bean.DynamicVideoDetails;
-import com.yiju.idol.bean.response.AddCommentResp;
-import com.yiju.idol.bean.response.CommentResp;
-import com.yiju.idol.bean.response.DynamicListResp;
-import com.yiju.idol.bean.response.UserPraiseResp;
-import com.yiju.idol.listener.OnShareClickListener;
-import com.yiju.idol.ui.adapter.DynamicVideoAdpter;
-import com.yiju.idol.ui.view.refresh.CustomHeader;
-import com.yiju.idol.utils.DialogUtils;
+import com.yiju.ldol.base.App;
+import com.yiju.ldol.base.BaseImmersionActivity;
+import com.yiju.ldol.bean.DetailsReturnData;
+import com.yiju.ldol.bean.DynamicVideoDetails;
+import com.yiju.ldol.bean.response.AddCommentResp;
+import com.yiju.ldol.bean.response.CommentResp;
+import com.yiju.ldol.bean.response.DynamicListResp;
+import com.yiju.ldol.bean.response.UserPraiseResp;
+import com.yiju.ldol.listener.OnShareClickListener;
+import com.yiju.ldol.ui.view.refresh.CustomHeader;
+import com.yiju.ldol.utils.DialogUtils;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.BindView;
-import butterknife.OnClick;
-import cn.jzvd.JZMediaManager;
-import cn.jzvd.JZUtils;
-import cn.jzvd.JZVideoPlayer;
-import cn.jzvd.JZVideoPlayerManager;
-import me.dkzwm.widget.srl.RefreshingListenerAdapter;
-import me.dkzwm.widget.srl.SmoothRefreshLayout;
-import me.dkzwm.widget.srl.extra.IRefreshView;
-import me.dkzwm.widget.srl.utils.ScrollCompat;
+
 
 /**
  * Created by thbpc on 2018/3/19 0019.

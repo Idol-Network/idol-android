@@ -11,14 +11,9 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.yiju.idol.R;
-import com.yiju.idol.api.APIHelper;
-import com.yiju.idol.api.BaseReslut;
-import com.yiju.idol.api.CallBack;
-import com.yiju.idol.base.BaseImmersionActivity;
-import com.yiju.idol.base.entity.IEventType;
-import com.yiju.idol.bean.response.CountryListResp;
-import com.yiju.idol.utils.RegexUtils;
+import com.yiju.ldol.base.BaseImmersionActivity;
+import com.yiju.ldol.bean.response.CountryListResp;
+import com.yiju.ldol.utils.RegexUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;

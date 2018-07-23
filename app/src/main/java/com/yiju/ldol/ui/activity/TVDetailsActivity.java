@@ -17,45 +17,19 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.gyf.barlibrary.ImmersionBar;
-import com.gyf.barlibrary.OnKeyboardListener;
-import com.yiju.idol.R;
-import com.yiju.idol.api.APIHelper;
-import com.yiju.idol.api.BaseReslut;
-import com.yiju.idol.api.CallBack;
-import com.yiju.idol.base.App;
-import com.yiju.idol.base.BaseActivity;
-import com.yiju.idol.base.entity.IMultiItemType;
-import com.yiju.idol.bean.DetailsReturnData;
-import com.yiju.idol.bean.VideoIntentData;
-import com.yiju.idol.bean.response.AddCommentResp;
-import com.yiju.idol.bean.response.AddViewNumResp;
-import com.yiju.idol.bean.response.CommentResp;
-import com.yiju.idol.bean.response.SettlementResp;
-import com.yiju.idol.bean.response.UserPraiseResp;
-import com.yiju.idol.listener.OnShareClickListener;
-import com.yiju.idol.ui.adapter.TVCommentAdapter;
-import com.yiju.idol.ui.view.JzVideoPlayer;
-import com.yiju.idol.ui.view.refresh.CustomHeader;
-import com.yiju.idol.utils.DialogUtils;
-import com.yiju.idol.utils.PaypalHelper;
+import com.yiju.ldol.base.App;
+import com.yiju.ldol.bean.DetailsReturnData;
+import com.yiju.ldol.bean.VideoIntentData;
+import com.yiju.ldol.bean.response.AddCommentResp;
+import com.yiju.ldol.bean.response.AddViewNumResp;
+import com.yiju.ldol.bean.response.CommentResp;
+import com.yiju.ldol.bean.response.SettlementResp;
+import com.yiju.ldol.bean.response.UserPraiseResp;
+import com.yiju.ldol.listener.OnShareClickListener;
+import com.yiju.ldol.ui.view.JzVideoPlayer;
+import com.yiju.ldol.ui.view.refresh.CustomHeader;
+import com.yiju.ldol.utils.DialogUtils;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import butterknife.BindView;
-import butterknife.OnClick;
-import cn.jzvd.JZMediaManager;
-import cn.jzvd.JZUserAction;
-import cn.jzvd.JZUtils;
-import cn.jzvd.JZVideoPlayer;
-import cn.jzvd.JZVideoPlayerStandard;
-import de.greenrobot.event.EventBus;
-import me.dkzwm.widget.srl.RefreshingListenerAdapter;
-import me.dkzwm.widget.srl.SmoothRefreshLayout;
-import me.dkzwm.widget.srl.extra.IRefreshView;
-import me.dkzwm.widget.srl.utils.ScrollCompat;
 
 /**
  * Created by thbpc on 2018/3/20 0020.

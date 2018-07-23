@@ -3,9 +3,7 @@ package com.yiju.ldol.ui.activity;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 
-import com.yiju.idol.R;
-import com.yiju.idol.base.BaseImmersionActivity;
-import com.yiju.idol.ui.adapter.ImagePagerAdpter;
+import com.yiju.ldol.base.BaseImmersionActivity;
 
 import java.util.ArrayList;
 

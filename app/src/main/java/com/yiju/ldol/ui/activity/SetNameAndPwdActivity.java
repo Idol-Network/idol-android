@@ -10,13 +10,10 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.yiju.idol.R;
-import com.yiju.idol.api.APIHelper;
-import com.yiju.idol.api.CallBack;
-import com.yiju.idol.base.App;
-import com.yiju.idol.base.BaseImmersionActivity;
-import com.yiju.idol.base.entity.IEventType;
-import com.yiju.idol.bean.response.LoginResp;
+import com.yiju.ldol.MainActivity;
+import com.yiju.ldol.base.App;
+import com.yiju.ldol.base.BaseImmersionActivity;
+import com.yiju.ldol.bean.response.LoginResp;
 
 import butterknife.BindView;
 import butterknife.OnClick;

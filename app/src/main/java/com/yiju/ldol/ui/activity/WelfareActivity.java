@@ -9,10 +9,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.facebook.drawee.view.SimpleDraweeView;
-import com.yiju.idol.R;
-import com.yiju.idol.base.BaseImmersionActivity;
-import com.yiju.idol.base.Constant;
-import com.yiju.idol.ui.view.FlowTagLayout;
+import com.yiju.ldol.base.BaseImmersionActivity;
+import com.yiju.ldol.ui.view.FlowTagLayout;
 
 import java.util.concurrent.TimeUnit;
 

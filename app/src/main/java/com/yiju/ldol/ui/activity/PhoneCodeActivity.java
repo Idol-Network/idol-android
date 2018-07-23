@@ -15,12 +15,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.yiju.idol.R;
-import com.yiju.idol.api.APIHelper;
-import com.yiju.idol.api.BaseReslut;
-import com.yiju.idol.api.CallBack;
-import com.yiju.idol.base.BaseImmersionActivity;
-import com.yiju.idol.utils.APKUtils;
+import com.yiju.ldol.base.BaseImmersionActivity;
+import com.yiju.ldol.utils.APKUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;

@@ -11,21 +11,13 @@ import android.widget.ImageView;
 
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.gyf.barlibrary.ImmersionBar;
-import com.netease.nim.uikit.api.NimUIKit;
-import com.netease.nimlib.sdk.RequestCallback;
-import com.netease.nimlib.sdk.auth.LoginInfo;
-import com.yiju.idol.R;
-import com.yiju.idol.api.APIHelper;
-import com.yiju.idol.api.BaseReslut;
-import com.yiju.idol.api.CallBack;
-import com.yiju.idol.base.App;
-import com.yiju.idol.base.BaseImmersionActivity;
-import com.yiju.idol.base.Constant;
-import com.yiju.idol.bean.UserBean;
-import com.yiju.idol.bean.response.LauncherResp;
-import com.yiju.idol.bean.response.LoginResp;
-import com.yiju.idol.bean.response.UserInfoResp;
-import com.yiju.idol.utils.PreferencesUtils;
+import com.yiju.ldol.MainActivity;
+import com.yiju.ldol.base.App;
+import com.yiju.ldol.base.BaseImmersionActivity;
+import com.yiju.ldol.bean.response.LauncherResp;
+import com.yiju.ldol.bean.response.LoginResp;
+import com.yiju.ldol.bean.response.UserInfoResp;
+import com.yiju.ldol.utils.PreferencesUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

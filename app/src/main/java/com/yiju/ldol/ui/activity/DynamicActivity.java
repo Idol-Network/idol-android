@@ -6,27 +6,17 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.yiju.idol.R;
-import com.yiju.idol.api.APIHelper;
-import com.yiju.idol.api.BaseReslut;
-import com.yiju.idol.api.CallBack;
-import com.yiju.idol.base.BaseImmersionActivity;
-import com.yiju.idol.base.entity.IMultiItemType;
-import com.yiju.idol.bean.DetailsReturnData;
-import com.yiju.idol.bean.DynamicVideoDetails;
-import com.yiju.idol.bean.response.DynamicListResp;
-import com.yiju.idol.bean.response.UserPraiseResp;
-import com.yiju.idol.listener.OnShareClickListener;
-import com.yiju.idol.ui.adapter.DynamicAdapter;
-import com.yiju.idol.ui.view.refresh.CustomHeader;
-import com.yiju.idol.utils.DialogUtils;
+import com.yiju.ldol.base.BaseImmersionActivity;
+import com.yiju.ldol.bean.DetailsReturnData;
+import com.yiju.ldol.bean.DynamicVideoDetails;
+import com.yiju.ldol.bean.response.DynamicListResp;
+import com.yiju.ldol.bean.response.UserPraiseResp;
+import com.yiju.ldol.listener.OnShareClickListener;
+import com.yiju.ldol.ui.view.refresh.CustomHeader;
+import com.yiju.ldol.utils.DialogUtils;
 
 import butterknife.BindView;
-import me.dkzwm.widget.srl.RefreshingListenerAdapter;
-import me.dkzwm.widget.srl.SmoothRefreshLayout;
-import me.dkzwm.widget.srl.extra.IRefreshView;
-import me.dkzwm.widget.srl.utils.ScrollCompat;
+
 
 /**
  * 动态

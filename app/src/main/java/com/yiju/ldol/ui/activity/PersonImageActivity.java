@@ -13,16 +13,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.facebook.drawee.view.SimpleDraweeView;
-import com.lzy.imagepicker.ImagePicker;
-import com.lzy.imagepicker.bean.ImageItem;
-import com.yiju.idol.R;
-import com.yiju.idol.api.APIHelper;
-import com.yiju.idol.api.CallBack;
-import com.yiju.idol.base.App;
-import com.yiju.idol.base.BaseImmersionActivity;
-import com.yiju.idol.bean.response.UpdateAvatarResp;
-import com.yiju.idol.listener.JPermissionListener;
-import com.yiju.idol.utils.DialogUtils;
+import com.yiju.ldol.base.App;
+import com.yiju.ldol.base.BaseImmersionActivity;
+import com.yiju.ldol.bean.response.UpdateAvatarResp;
+import com.yiju.ldol.listener.JPermissionListener;
+import com.yiju.ldol.utils.DialogUtils;
 
 import java.io.File;
 import java.util.ArrayList;

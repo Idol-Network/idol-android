@@ -13,12 +13,10 @@ import android.widget.TextView;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.imagepipeline.core.ImagePipeline;
-import com.yiju.idol.R;
-import com.yiju.idol.base.App;
-import com.yiju.idol.base.BaseImmersionActivity;
-import com.yiju.idol.base.entity.IEventType;
-import com.yiju.idol.utils.APKUtils;
-import com.yiju.idol.utils.DataCleanManager;
+import com.yiju.ldol.base.App;
+import com.yiju.ldol.base.BaseImmersionActivity;
+import com.yiju.ldol.utils.APKUtils;
+import com.yiju.ldol.utils.DataCleanManager;
 
 import butterknife.BindView;
 import butterknife.OnClick;
