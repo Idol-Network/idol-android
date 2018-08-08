@@ -149,10 +149,14 @@ public class LoginActivity extends BaseImmersionActivity {
                 public void onSuccess(LoginResp data) {
                     if (data != null && data.user != null) {
                         App.getApp().setUser(data);
-                        if (data.user.followerNum == 0) {
-                            startActivity(new Intent(mContext, AddFollowActivity.class));
+                        if (data.threeFirst) {
+                            startActivity(new Intent(mContext, InputInvitationCodeActivity.class));
                         } else {
-                            startActivity(new Intent(mContext, MainActivity.class));
+                            if (data.user.followerNum == 0) {
+                                startActivity(new Intent(mContext, AddFollowActivity.class));
+                            } else {
+                                startActivity(new Intent(mContext, MainActivity.class));
+                            }
                         }
                         finish();
                     }
@@ -213,10 +217,14 @@ public class LoginActivity extends BaseImmersionActivity {
                             public void onSuccess(LoginResp data) {
                                 if (data != null && data.user != null) {
                                     App.getApp().setUser(data);
-                                    if (data.user.followerNum == 0) {
-                                        startActivity(new Intent(mContext, AddFollowActivity.class));
+                                    if (data.threeFirst) {
+                                        startActivity(new Intent(mContext, InputInvitationCodeActivity.class));
                                     } else {
-                                        startActivity(new Intent(mContext, MainActivity.class));
+                                        if (data.user.followerNum == 0) {
+                                            startActivity(new Intent(mContext, AddFollowActivity.class));
+                                        } else {
+                                            startActivity(new Intent(mContext, MainActivity.class));
+                                        }
                                     }
                                     finish();
                                 }
